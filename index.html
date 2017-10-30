@@ -9,87 +9,63 @@
         color: red;
       }
       h1{
+        font-family: helvetica, sans;
+        font-weight: bold;
         font-size: 7vw;
-        margin-top: 0;      }
+        margin-top: 0;
+      }
       h2 {
+        font-family: 'HelveticaNeue-Light', 'Helvetica Neue Light', 'Helvetica Neue', Helvetica, Arial, 'Lucida Grande', sans-serif;
         font-size: 30px;
+        font-style: italic;
+        font-weight: light;
       }
       html, body {
         margin: 0;
         padding: 0;
       }
 
-      /* offering-BOX STYLES */
-      .offering-wrapper {
-        font-size: 24px;
-        margin: auto;
-        max-width: 960px;
-        overflow: hidden;
+      /* WRAPPERS */
+      .how-it-works-wrapper {
+        max-width: 50em;
+        margin: 0 auto;
       }
-      /*.offering-wrapper:after { /* The "clearfix" method of managing overflow text after floated blocks. */
-/*        visibility: hidden;
-        display: block;
-        font-size: 0;
-        content: " ";
+
+      /*  SECTIONS  */
+      .section {
         clear: both;
-        height: 0;
-      }*/
-      .offering-box {
-        border: 1px solid black;
-        box-sizing: border-box;
-        float: left;
-        font-size: 1rem;
-        margin: 40px 1% 0 1%;
-        padding: 0 2% 2% 2%;
-        width: 23%;
-      }
-      .offering-box h3 {
-        color: #fff;
-        font-size: 1.5em;
-        margin: -40px 0 1em 0;
-        text-align: center;
-      }
-      .offering-box img {
-        width: 100%;
-      }
-      .offering-copy {
-        font-size: 1em;
+        padding: 0px;
+        margin: 0px;
       }
 
-      /* EXAMPLE STYLES */
-      .example-link {
-        background: rgba(200, 200, 200, 0.5);
-        border-radius: 99px;
-        box-sizing: border-box;
-        color: #fff;
-        display: inline-block;
-        font-family: helvetica, arial, sans;
-        font-size: 1rem;
-        font-weight: bold;
-        height: 2.5em;
-        line-height: 1;
-        padding-top: 0.85em;
-        text-align: center;
-        text-decoration: none;
-        vertical-align: middle;
-        width: 2.5em;
+      /*  COLUMN SETUP  */
+      .col {
+        display: block;
+        float:left;
+        margin: 1% 0 1% 1.6%;
+        background-color: red;
       }
-      .example-list {
-        list-style: none;
-        padding: 0;
-        text-align: center;
-      }
-      .example-list > li {
-        display: inline-block;
+      .col:first-child { margin-left: 0; }
+
+      /*  GROUPING  */
+      .group:before,
+      .group:after { content:""; display:table; }
+      .group:after { clear:both;}
+      .group { zoom:1; /* For IE 6/7 */ }
+      .group {
+        margin: 1em;
       }
 
-      /* HERO STYLES */
-      .full-hero {
-        background-color: #c7dbfc;
-        height: 50vh;
-        /* Make a square:
-        height: 50vw;
-        width: 50vw;*/
+      /*  GRID OF THREE  */
+      .span_3_of_3 { width: 100%; }
+      .span_2_of_3 { width: 66.13%; }
+      .span_1_of_3 { width: 32.26%; }
+
+      /*  GO FULL WIDTH BELOW 480 PIXELS */
+      @media only screen and (max-width: 480px) {
+        .col {  margin: 1% 0 1% 0%; }
+        .span_3_of_3, .span_2_of_3, .span_1_of_3 { width: 100%; }
+        .group { margin: 0; }
       }
     </style>
   </head>
@@ -98,65 +74,29 @@
 
   <body>
 
-    <div class="full-hero hero-home">
-      <h1>I'm an h1</h1>
-
-      <ul class="example-list">
-        <li>
-          <a href="http://example.com/" class="example-link">GH</a>
-        </li>
-        <li>
-          <a href="http://example.com/" class="example-link">Tw</a>
-        </li>
-        <li>
-          <a href="http://example.com/" class="example-link">SC</a>
-        </li>
-      </ul>
-    </div>
-
-    <h2>Our current offerings</h2>
-
-    <div class="offering-box-wrapper">
-      <div class="offering-box">
-        <img src="images/placekitten400.jpg">
-        <h3>PBW</h3>
-        <a href="http://example.com/" class="example-link">GH</a>
-        <p class="offering-copy">
-          A dude, a bro, but not a dude-bro.
-          <br>
-          More text.
-          <br>
-          More text.
-          <br>
-          More text.
-          <br>
-          More text.
-          <br>
-          More text.
-        </p>
+    <div class="landscape-image-big-logo-wrapper">
+      <div class="landscape-image">
+        
       </div>
-      <div class="offering-box">
-        <img src="images/placekitten400.jpg">
-        <h3>YC</h3>
-        <a href="http://example.com/" class="example-link">GH</a>
-        <p class="offering-copy">
-          Steady-eady-eady.
-        </p>
-      </div>
-      <div class="offering-box">
-        <img src="images/placekitten400.jpg">
-        <h3>TBD</h3>
-        <a href="http://example.com/" class="example-link">Tw</a>
-        <p class="offering-copy">
-          Stay tuned...
-        </p>
+
+      <div class="big-logo">
+        <h1>Orchard</h1>
+        <h2>Growing clean energy.</h2>
       </div>
     </div>
 
-    <div>
-      <p>
-        TONS OF TEXT.  
-      </p>
+    <div class="how-it-works-wrapper">
+      <div class="section group">
+        <div class="col span_1_of_3">
+        This is column 1
+        </div>
+        <div class="col span_1_of_3">
+        This is column 2
+        </div>
+        <div class="col span_1_of_3">
+        This is column 3
+        </div>
+      </div>
     </div>
 
   </body>
