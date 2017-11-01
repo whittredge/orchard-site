@@ -7,169 +7,116 @@
       @import "bootstrap.css";
       @import "bootstrap-grid.css";
       @import "bootstrap-reboot.css";
-      .exampleA {
-        background: red;
+      .top-image-with-logo {
+        width:100%;
       }
-      .col-md-3 {
-        background: green;
-        text-align: center;
-        border: 1px solid black;
+      .top-logo {
+        vertical-align: text-bottom;
+        height: 100%;
       }
       .navbar {
         position: sticky;
+        margin-top: -1px; /* Fix bug on FirefoxDevEd (and maybe others) where top row of pixels showed background scrolling behind sticky navbar. */
       }
     </style>
   </head>
   <body>
-    <div class="container exampleA">
-      This is a container.
-      <div class="row justify-content-md-center">
-        <div class="col-md-3">
-          Column one.
+<!--     <div class="container top-matter">
+      <div class="row">
+        <div class="col-md-8">
+          <img src="images/Trees-and-Panel-top-image.jpg" class="top-image">
         </div>
-        <div class="col-md-3">
-          Column two.
-        </div>
-        <div class="col-md-3">
-          Column three.
+        <div class="col-md-4 top-logo">
+          Logo text here.
         </div>
       </div>
+    </div> -->
+
+    <div class="container top-matter">
+      <img src="images/Trees-and-Panel-plus-Logo-top-image.jpg" class="top-image-with-logo">
+    </div>
 
     <nav class="navbar sticky-top navbar-expand-lg navbar-light bg-light">
-      <a class="navbar-brand" href="#">Orchard</a>
-      <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
-        <span class="navbar-toggler-icon"></span>
-      </button>
+      <div class="container">
+        <a class="navbar-brand" href="#">Orchard</a>
+        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+          <span class="navbar-toggler-icon"></span>
+        </button>
 
-      <div class="collapse navbar-collapse" id="navbarSupportedContent">
-        <ul class="navbar-nav mr-auto">
-          <li class="nav-item active">
-            <a class="nav-link" href="#">Home <span class="sr-only">(current)</span></a>
-          </li>
-          <li class="nav-item">
-            <a class="nav-link" href="#">Link</a>
-          </li>
-          <li class="nav-item dropdown">
-            <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
-              Dropdown
-            </a>
-            <div class="dropdown-menu" aria-labelledby="navbarDropdown">
-              <a class="dropdown-item" href="#">Action</a>
-              <a class="dropdown-item" href="#">Another action</a>
-              <div class="dropdown-divider"></div>
-              <a class="dropdown-item" href="#">Something else here</a>
-            </div>
-          </li>
-          <li class="nav-item">
-            <a class="nav-link disabled" href="#">Disabled</a>
-          </li>
-        </ul>
-        <form class="form-inline my-2 my-lg-0">
-          <input class="form-control mr-sm-2" type="search" placeholder="Search" aria-label="Search">
-          <button class="btn btn-outline-success my-2 my-sm-0" type="submit">Search</button>
-        </form>
+        <div class="collapse navbar-collapse" id="navbarSupportedContent">
+          <ul class="navbar-nav mx-auto">
+            <li class="nav-item active">
+              <a class="nav-link" href="#">Home<span class="sr-only">(current)</span></a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="#">Our Projects</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="#">About Us</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="#">Login</a>
+            </li>
+          </ul>
+          <div class="mr-sm-2">
+            <button class="btn btn-outline-success my-2 my-sm-0">How to Invest</button>
+          </div>
+        </div>  
       </div>
+      
     </nav>
 
 
-
-      <div class="row justify-content-md-center">
-        <div class="col-md-3">
-          Column one.
+    <div class="container py-3">
+      <p>
+        <h2 class="text-center">How it works</h2>
+      </p>
+      <div class="row justify-content-md-center text-center">
+        <div class="col-md-3 py-3">
+          <img src="images/How-It-Works_Build-Panels.svg" class="pb-3">
+          Join our community by investing in a Solar Energy Bond from Orchard.
         </div>
-        <div class="col-md-3">
-          Column two.
+        <div class="col-md-3 py-3">
+          <img src="images/How-It-Works_Build-Panels.svg" class="pb-3">
+          Your investment builds solar fields that deliver renewable energy to the grid.
         </div>
-        <div class="col-md-3">
-          Column three.
+        <div class="col-md-3 py-3">
+          <img src="images/How-It-Works_Build-Panels.svg" class="pb-3">
+          You earn guaranteed dividends while advancing renewable energy.
         </div>
       </div>
-            <p>
-        Tons of text.  MOAR texts. <br>
+      <div class="row justify-content-md-center text-center py-5">
+        <div class="col-md-3">
+          <button type="button" class="btn btn-outline-dark btn-lg">See Available<br>Solar Bonds</button>
+        </div>
+      </div>
+      <p>
+        <h2>
+          Build the most solar energy for your dollar.
+        </h2>
       </p>
       <p>
-        Tons of text.  MOAR texts. <br>
+        THIS WEBSITE IS FOR DEMONSTRATION PURPOSES ONLY.
       </p>
       <p>
-        Tons of text.  MOAR texts. <br>
+        THERE IS NO ACTUAL ORGANIZATION CALLED ORCHARD, AND THERE ARE NO BONDS AVAILABLE FOR INVESTMENT.
       </p>
       <p>
-        Tons of text.  MOAR texts. <br>
-      </p>
-      <p>
-        Tons of text.  MOAR texts. <br>
-      </p>
-      <p>
-        Tons of text.  MOAR texts. <br>
-      </p>
-      <p>
-        Tons of text.  MOAR texts. <br>
-      </p>
-      <p>
-        Tons of text.  MOAR texts. <br>
-      </p>
-      <p>
-        Tons of text.  MOAR texts. <br>
-      </p>
-      <p>
-        Tons of text.  MOAR texts. <br>
-      </p>
-      <p>
-        Tons of text.  MOAR texts. <br>
-      </p>
-      <p>
-        Tons of text.  MOAR texts. <br>
-      </p>
-      <p>
-        Tons of text.  MOAR texts. <br>
-      </p>
-      <p>
-        Tons of text.  MOAR texts. <br>
-      </p>
-      <p>
-        Tons of text.  MOAR texts. <br>
-      </p>
-      <p>
-        Tons of text.  MOAR texts. <br>
-      </p>
-      <p>
-        Tons of text.  MOAR texts. <br>
-      </p>
-      <p>
-        Tons of text.  MOAR texts. <br>
-      </p>
-      <p>
-        Tons of text.  MOAR texts. <br>
-      </p>
-      <p>
-        Tons of text.  MOAR texts. <br>
-      </p>
-      <p>
-        Tons of text.  MOAR texts. <br>
-      </p>
-      <p>
-        Tons of text.  MOAR texts. <br>
-      </p>
-      <p>
-        Tons of text.  MOAR texts. <br>
-      </p>
-      <p>
-        Tons of text.  MOAR texts. <br>
-      </p>
-      <p>
-        Tons of text.  MOAR texts. <br>
-      </p>
-      <p>
-        Tons of text.  MOAR texts. <br>
-      </p>
-      <p>
-        Tons of text.  MOAR texts. <br>
-      </p>
-      <p>
-        Tons of text.  MOAR texts. <br>
-      </p>
-      <p>
-        Tons of text.  MOAR texts. <br>
+        Text to demonstrate scrolling. <br>
+        Text to demonstrate scrolling. <br>
+        Text to demonstrate scrolling. <br>
+        Text to demonstrate scrolling. <br>
+        Text to demonstrate scrolling. <br>
+        Text to demonstrate scrolling. <br>
+        Text to demonstrate scrolling. <br>
+        Text to demonstrate scrolling. <br>
+        Text to demonstrate scrolling. <br>
+        Text to demonstrate scrolling. <br>
+        Text to demonstrate scrolling. <br>
+        Text to demonstrate scrolling. <br>
+        Text to demonstrate scrolling. <br>
+        Text to demonstrate scrolling. <br>
+        Text to demonstrate scrolling. <br>
       </p>
     </div>
   </body>
